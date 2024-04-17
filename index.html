@@ -31,6 +31,8 @@
             placeholder="Gipsz Jakab"
             name="nev"
           />
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Kötelező nagybetűvel kezdődjön. Legalább 3 betű</div>
         </div>
         <div class="mb-3">
           <label for="kor" class="form-label">Kor:</label>
@@ -42,6 +44,8 @@
             min="0"
             max="120"
           />
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">A kor 0 és 120 között lehet.</div>
         </div>
         <div class="form-check">
           <input
@@ -49,7 +53,7 @@
             class="form-check-input"
             id="ferfi"
             name="nem"
-            value="true"
+            value="no"
             checked
           />Férfi
           <label class="form-check-label" for="ferfi"></label>
@@ -60,12 +64,12 @@
             class="form-check-input"
             id="no"
             name="nem"
-            value="false"
+            value="ferfi"
           />Nő
           <label class="form-check-label" for="no"></label>
         </div>
 
-        <button type="submit" class="btn btn-primary">Hozzáad</button>
+        <button type="submit" id="submit" class="btn btn-primary">Hozzáad</button>
       </form>
     </div>
     <div class="be">
