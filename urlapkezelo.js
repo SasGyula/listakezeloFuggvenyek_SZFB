@@ -4,7 +4,7 @@ export function ujAdat(lista){
 
     const nevELEM= $("#nev")
     const korELEM= $("#kor")
-    const nemELEM= $("input[name='nem']:checked")
+
     const submitELEM= $("#submit")
     const adatOBJ = {
         nev: "",
@@ -17,6 +17,7 @@ export function ujAdat(lista){
         adatOBJ.kor = Number(korELEM.val())
         adatOBJ.nem = (nemELEM.val() ==="true" ? true : false)
         console.log(adatOBJ)
+            const nemELEM= $("input[name='nem']:checked")
         const validELEM = $(".valid-feedback")
         const nevValidE = validELEM.eq(0).css("display")!== "none"
         const korValidE = validELEM.eq(1).css("display")!== "none"
